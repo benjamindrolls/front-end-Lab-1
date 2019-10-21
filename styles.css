@@ -1,0 +1,77 @@
+body{
+    background-color: #f9fafc;
+    font-family: 'open sans', sans-serif;
+}
+
+li {
+    list-style: none;
+    padding: 2px;
+    font-size: 12px;
+}
+
+nav {
+    padding: 10px;
+}
+
+a {
+    color: #69696a;
+    text-decoration: none;
+}
+
+.har {
+    width: 50vh;
+    height: 25px;
+    border: 1px solid #000;
+    background-color: #000;
+    border-radius: 40px;
+    text-align: center;
+    margin-left: 15px;
+    font-size: 12px;
+
+}
+
+#hey {
+    color: #fff;
+}
+
+button {
+    width: 50vh;
+    height: 25px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    border-style: none;
+    margin-left: 15px;
+    
+}
+
+p {
+    color: #69696a;
+    border-left: 2px solid #69696a;
+    padding-left: 15px;
+    margin-left: 8px;
+}
+
+
+
+
+
+.bar:hover {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+        background-size: 800% 800%;
+        animation: rainbow 8s ease infinite;
+
+}  
+
+button:hover {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+        background-size: 800% 800%;
+        animation: rainbow 8s ease infinite;
+}
+
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
