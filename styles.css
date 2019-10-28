@@ -1,4 +1,5 @@
 body{
+    height: 100vh;
     background-color: #f9fafc;
     font-family: 'open sans', sans-serif;
 }
@@ -19,14 +20,14 @@ a {
 }
 
 .har {
-    width: 50vh;
+    width: 90vw;
     height: 25px;
     border: 1px solid #000;
     background-color: #000;
     border-radius: 40px;
     text-align: center;
-    margin-left: 15px;
     font-size: 12px;
+    margin-top: 10px;
 
 }
 
@@ -35,7 +36,7 @@ a {
 }
 
 button {
-    width: 50vh;
+    width: 90vw;
     height: 25px;
     background-color: #000;
     color: #fff;
@@ -74,4 +75,72 @@ button:hover {
     0%{background-position:0% 50%}
     50%{background-position:100% 25%}
     100%{background-position:0% 50%}
+}
+
+
+@media only screen and (min-width:768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    nav li.active {
+        flex-grow: 1;
+    }
+
+    .har {
+        margin-top: 0;
+        width: 60px;
+        height: 20px;
+        margin-left: 3px;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+    .body {
+        padding-top: 100px;
+        width: 550px;
+    }
+
+    button {
+        position: absolute;
+        right: 50%;
+        left: 47%;
+        bottom: 15px;
+        width: 100px;
+        height: 23px;
+    }
+
+    .small {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        right: 10px;
+        top: 302px;
+        background-color: rgba(207, 130, 213, 0.6) ;
+    }
+
+    .medium {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        position: absolute;
+        right: 21px;
+        top: 355px;
+        background-color: rgba(247, 193, 162, 0.7);
+    }
+
+    .large {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: absolute;
+        right: 75px;
+        top: 255px;
+        background-color: rgba(247, 136, 167, 0.6);
+    }
 }
